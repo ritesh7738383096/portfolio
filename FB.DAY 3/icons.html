@@ -1,0 +1,116 @@
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Bootstrap</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    body { padding-top: 70px; }
+    .design{
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    }
+
+    .section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+    .icon-box {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .icon-box i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .icon-box h4 {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .icon-box p {
+      color: #555;
+    }
+  </style>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">MySite</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container section">
+    <!-- Banner started -->
+    <div class="jumbotron design">
+      <h1>Bootstrap Tutorial</h1>
+      <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+        responsive, mobile-first projects on the web.</p>
+    </div>
+
+    <div class="row">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">
+              <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">Panel Body</div>
+            <div class="panel-footer">Panel Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section with Icons in One Row -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="glyphicon glyphicon-home"></i>
+          <h4>Home</h4>
+          <p>Welcome to our homepage. Explore our services and products.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="glyphicon glyphicon-cog"></i>
+          <h4>Settings</h4>
+          <p>Customize your preferences and settings here.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="glyphicon glyphicon-phone"></i>
+          <h4>Contact</h4>
+          <p>Get in touch with us through our contact page.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
